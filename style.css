@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Nothing+You+Could+Do&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.sidebar{
+    background-color: cadetblue;
+    background-attachment: fixed;
+    /* width: 220px;*/              /*width: 12vw; */
+    font-family: 'Nanum Pen Script', 'Nothing You Could Do', sans-serif;
+    /*font-size: 30px;*/
+    height:100rem;
+    border-radius: 0px 10px 10px 0px;
+    position: absolute;
+    transition: transform 0.3s;
+}
+.sname{
+    font-family: nothing you could do;
+    font-size: 2rem;
+    padding: 9px;
+    margin: 72px 0px -16px 0px;
+}
+.sidebar nav{
+    width: fit-content;
+    padding: 16px;
+    font-size: 30px
+}
+.sidebar nav li{
+    list-style: none;
+    padding: 30px;
+
+}
+.sidebar nav li a{                  /*a:link{
+                                    text-decoration: none;}*/
+    text-decoration: none;
+    color: black;
+}
+.main{
+    background-color: beige;
+    background-attachment:scroll;
+    /* background-repeat: repeat; */
+    width: 100%;
+    height: 100vh; 
+    padding: 0px 0px 0px 12px;
+    /*font-family: 'nothing you could do', sans-serif;*/
+}
+.container{
+    display: flex;
+}
+.infocontainer{
+    /*background-color: lightcoral;*/
+    margin: 155px 155px 0px 200px;
+    /* height: 50vh;
+    width: 80vw; */         /* these height and width are used in the start to understand the container and img*/
+    display: flex;
+    justify-content: space-around;
+}
+.devpic img{
+    height: 45vh;
+    /* width: 132px; */
+    transform-style: preserve-3d;
+    transform: rotatey(-180deg);
+}
+.devinfo{
+    display: flex;
+    font-size: 20px;
+    /* justify-content: center; */ /* this justification is causing issues with pic in responsive*/
+    /*align-items: center;*/
+    flex-direction: column;
+    margin: 34px 0px 0px 25px;
+    font-family: 'nanum pen script', 'source code pro';
+}
+
+.hello{
+    font-size: 3em;
+}
+
+.name{
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'nothing you could do';
+}
+.aboutMe{
+    font-size: 2em;
+}
+.button{
+    margin-top:12px;
+    font-size: 16px;
+}
+.btn{
+    background-color: rgb(104, 162, 164);
+    border-radius: 16px;
+    padding: 8px 16px;
+    font-size: 0.9em;
+    font-weight:bold;
+    cursor: pointer;
+    margin: 12px 12px 0px -4px;
+
+}
+/*.btn button{
+   
+
+}*/
+.btn:hover{
+    background-color: white;
+}
+.contactForm{
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    /* padding: 30px 10px; */
+    margin: 18px 0px 0px 200px;
+}
+.contactForm h1{
+    /* padding-top: 59px; */
+    font-size: 60px;
+    /* text-align: center; */
+    font-family: 'NANUM PEN SCRIPT';
+    margin: 0px 40px;
+}
+.form-group{
+   padding-top: 15px; /*.contactForm form div{padding: 30px;}*/
+}
+.contactForm form{
+    margin: 20px 30px;
+}
+#clientName{
+    border-radius: 6px;
+    /*width: 17vw;*/ /* this width is disturbing responsiveness*/
+    height: 19px;
+    padding-left: 10px;
+    margin-left: 32px;
+    background-color: transparent;
+}
+#clientEmail{
+    border-radius: 6px;
+    /* width: 17vw; */
+    height: 19px;
+    padding-left: 10px;
+    margin-left: 34px;
+    background-color: transparent;
+}
+#clientPhone{
+    border-radius: 6px;
+    /* width: 17vw; */
+    height: 19px;
+    padding-left: 10px;
+    margin-left: 28px;
+    background-color: transparent;
+}
+#comments{
+    border-radius: 6px;
+    /* width: 50vw; */
+    height: 10vh;
+    padding: 10px;
+    margin: 3px 0px 0px 0px;
+    background-color: transparent;
+    display: flex;
+    /* overflow-y: scroll; */ /* this is used to scroll the comments box in y direction*/
+}
+
+#isClient{
+    padding:4px;
+}
+
+/*.form-group button{
+    background-color: rgb(104, 162, 164);
+    border-radius: 16px;
+    padding: 8px 16px;
+    font-size: 10px;
+    font-weight:bold;
+    margin: 12px 0px 0px -4px;
+    cursor: pointer;
+}*/
+.blogContainer{
+    margin: 18px 0px 0px 200px;
+    font-size: 16px;
+    
+}
+
+.blogContainer h1{
+    text-align: center;
+    font-size: 4em;
+    font-weight: bold;
+    font-family: 'nanum pen script', sans-serif;
+    margin: 55px 0px 20px 0px;
+
+}
+
+.blogItem{
+    padding: 10px;
+    font-family: 'fira sans',sans-serif, 'nothing you could do';
+    margin: 10px 50px 10px 50px;
+    font-size: 16px;
+}
+
+.blogItem h2{
+    font-size: 32px;
+    margin: 4px 0px 7px 0px;
+    font-family:'fira sans', 'sans-serif';
+    font-size: 2em;
+}
+
+.blogItem p{
+    font-size: 1.4em;
+    font-family: 'nothing you could do', 'nanum pen script';
+}
+
+.aboutContainer{
+    margin: 65px 10px 12px 200px;
+}
+
+.about{
+    font-size: 16px;
+}
+
+.aboutContainer h2{
+    font-family: 'nothing you could do', 'fira sans';
+    font-weight: bolder;
+    padding: 32px 0px 11px 0px;
+    font-size: 2em;
+}
+.aboutContainer p{
+    font-family: 'nothing you could do','fira sans';
+    font-size: 1.4em;
+}
+
+.skills{
+    font-size: 16px;
+}
+
+.skillItem{
+    font-family: 'source code pro','fira sans';
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+
+}
+.skillProgress{
+    width: 400px;
+    height: 6px;
+    border: 2px solid black;
+    margin: 3px 0px 0px 1px;
+    border-radius: 10px;
+    /*box-shadow: 0 0 10px rgb(245, 159, 0);*/
+}
+.percentage{
+    height: 100%;
+    border-radius: 2px;
+    background-color: cadetblue;
+    display:block;
+    animation: progress 1500ms ease-in 1;
+}
+
+.html{
+    width: 70%;
+}
+.css{
+    width: 60%;
+}
+.js{
+    width: 50%;
+}
+.and{
+    width: 30%;
+}
+
+.hamburger{
+    /* margin: 15px 12px 0px -213px;
+    width: 200px; */
+    position: absolute;  /*since we used position here we shouldnt be using margin, so top is used*/
+    top: 23px;
+    left: 10px;
+    cursor: pointer;
+}
+.close{
+    margin-left: 130px;
+    cursor: pointer;
+    position: absolute;
+    transition: transform 0.9s;
+}
+.ham{
+    cursor: pointer;
+    position: absolute;
+}
+.sidebarGo{
+    transform: translate(-400px,0px);
+    position: absolute;
+}
+
+
+@keyframes progress{
+    from{
+        width:0;
+    }
+}
+
+@media (max-width: 950px){
+    *{
+        /* background-color: lightcoral; */
+    }
+
+    /* .sidebar{
+        transform: translate(-400px,0px);
+        position: absolute;
+    } */
+
+    .intro, .blogContainer, .contactForm, .infocontainer, .aboutContainer{
+        margin: 50px 8px ;
+    }
+    
+    .contactForm h1{
+        font-size: 2rem;
+        
+    }
+    
+    .devpic img{
+        height: 30vh;
+        align-items: baseline;
+    }
+
+    .devinfo, .button, .about, .skills, .skillItem, .blogItem, .blogContainer{
+        font-size: 10px;
+    }
+    
+    .skillProgress{
+        width: 100px;
+    }
+}
+
+
